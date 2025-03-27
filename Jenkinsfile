@@ -6,5 +6,10 @@ pipeline {
                 sh 'mvn --version'
             }
         }
+        stage('test') {
+            steps {
+                echo 'Testing..'
+            }
+        }
     }
 }
